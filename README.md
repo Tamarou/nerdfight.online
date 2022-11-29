@@ -1,2 +1,2 @@
-# marginal.press
+# nerdfight.online
 Fediverse instance configuration
