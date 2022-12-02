@@ -1,0 +1,34 @@
+databases:
+- name: gotosocial
+  region: ohio
+  plan: starter # $7/mo
+
+services:
+- type: web
+  name: gotosocial-app
+  env: docker
+  plan: starter # $7/mo - required for persistent disk
+  region: ohio
+  autoDeploy: false
+  disk:
+    name: data
+    mountPath: /data
+  envVars:
+    - key: GTS_HOST
+      value: nerdfight.online
+    - key: GTS_DB_ADDRESS
+      fromDatabase:
+        name: gotosocial
+        property: host
+    - key: GTS_DB_USER
+      fromDatabase:
+        name: gotosocial
+        property: user
+    - key: GTS_DB_PASSWORD
+      fromDatabase:
+        name: gotosocial
+        property: password
+    - key: GTS_LETSENCRYPT_ENABLED
+      value: "true"
+    - key: GTS_LETSENCRYPT_EMAIL_ADDRESS
+      value: "webmaster@nerdfight.online"
