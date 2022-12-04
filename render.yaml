@@ -28,7 +28,13 @@ services:
       fromDatabase:
         name: gotosocial
         property: password
-    - key: GTS_LETSENCRYPT_ENABLED
-      value: "true"
-    - key: GTS_LETSENCRYPT_EMAIL_ADDRESS
-      value: "webmaster@nerdfight.online"
+    - key: GTS_STORAGE_BACKEND
+      value: local
+    - key: GTS_STORAGE_S3_ENDPOINT
+      value: nerdfight.online.us-east-1.linodeobjects.com
+    - key: GTS_STORAGE_BUCKET
+      value: nerdfight.online
+    - key: GTS_STORAGE_ACCESS_KEY
+      sync: false
+    - key: GTS_STORAGE_SECRET_KEY
+      sync: false
