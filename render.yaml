@@ -29,12 +29,12 @@ services:
         name: gotosocial
         property: password
     - key: GTS_STORAGE_BACKEND
-      value: local
+      value: s3
     - key: GTS_STORAGE_S3_ENDPOINT
-      value: nerdfight.online.us-east-1.linodeobjects.com
-    - key: GTS_STORAGE_BUCKET
+      value: us-east-1.linodeobjects.com
+    - key: GTS_STORAGE_S3_BUCKET
       value: nerdfight.online
-    - key: GTS_STORAGE_ACCESS_KEY
+    - key: GTS_STORAGE_S3_ACCESS_KEY
       sync: false
-    - key: GTS_STORAGE_SECRET_KEY
+    - key: GTS_STORAGE_S3_SECRET_KEY
       sync: false
