@@ -10,9 +10,6 @@ services:
   plan: starter # $7/mo - required for persistent disk
   region: ohio
   autoDeploy: false
-  disk:
-    name: data
-    mountPath: /data
   envVars:
     - key: GTS_HOST
       value: nerdfight.online
