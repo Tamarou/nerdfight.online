@@ -35,3 +35,16 @@ services:
       sync: false
     - key: GTS_STORAGE_S3_SECRET_KEY
       sync: false
+    - key: GTS_OIDC_ENABLED
+      value: false
+    - key: GTS_OIDC-IDP-NAME
+      value: Auth0
+    - key: GTS_OIDC_ISSUER
+      value: https://dev-u30o0ebhxa1w43o8.us.auth0.com/login
+    - key: GTS_OIDC_CLIENT_ID
+      sync: false
+    - key: GTS_OIDC_CLIENT_SECRET
+      sync: false
+    - key: GTS_OIDC_LINK_EXISTING
+      key: true
+
