@@ -46,5 +46,5 @@ services:
     - key: GTS_OIDC_CLIENT_SECRET
       sync: false
     - key: GTS_OIDC_LINK_EXISTING
-      key: true
+      value: true
 
