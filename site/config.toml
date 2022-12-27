@@ -34,4 +34,4 @@ enableRobotsTXT = true
 
 [[params.ananke_socials]]
 name = "mastodon"
-url = "https://nerdfight.online"
+url = "https://client.nerdfight.online"
