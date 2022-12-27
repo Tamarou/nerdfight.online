@@ -1,8 +1,7 @@
 title = "Notre-Dame de Paris"
-baseURL = "http://100.69.186.33:1313"
+baseURL = "https://nerdfight.online"
 languageCode = "en-us"
 theme = "ananke"
-resourceDir = "../resources"
 
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
