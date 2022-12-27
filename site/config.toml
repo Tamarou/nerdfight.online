@@ -1,7 +1,7 @@
-title = "Notre-Dame de Paris"
+title = "Nerdfight Online"
 baseURL = "https://nerdfight.online"
 languageCode = "en-us"
-theme = "ananke"
+theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
 
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
@@ -34,4 +34,4 @@ enableRobotsTXT = true
 
 [[params.ananke_socials]]
 name = "mastodon"
-url = "https://nerdfight.online"
+url = "https://client.nerdfight.online"
