@@ -5,9 +5,21 @@ databases:
 
 services:
 - type: web
-  name: gotosocial-app
+  name: nerdfight.online
+  env: static
+  rootDir: site
+  buildCommand: hugo --gc --minify
+  staticPublishPath: public
+  domains:
+    nerdfight.online
+  routes:
+    type: rewrite
+    source: /* # rewrite everything we don't provide to the GTS instance
+    destination: https://gts.nerdfight.online:80/
+- type: web
+  name: gts.nerdfight.online
   env: docker
-  plan: starter # $7/mo - required for persistent disk
+  plan: starter
   region: ohio
   autoDeploy: false
   envVars:
