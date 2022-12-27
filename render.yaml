@@ -11,11 +11,11 @@ services:
   buildCommand: hugo --gc --minify
   staticPublishPath: public
   domains:
-    nerdfight.online
+    - nerdfight.online
   routes:
-    type: rewrite
-    source: /* # rewrite everything we don't provide to the GTS instance
-    destination: https://gts.nerdfight.online:80/
+    - type: rewrite
+      source: /* # rewrite everything we don't provide to the GTS instance
+      destination: https://gts.nerdfight.online:80/
 - type: web
   name: gts.nerdfight.online
   env: docker
