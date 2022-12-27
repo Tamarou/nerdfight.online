@@ -1,5 +1,5 @@
 title = "Nerdfight ONline"
 baseURL = "https://nerdfight.online"
 languageCode = "en-us"
-theme = "ananke"
+theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
 
