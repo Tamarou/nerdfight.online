@@ -1,8 +1,10 @@
-# Terms of Service
+---
+title: "Terms of Service"
+---
 We hate legalese, so we've tried to make ours readable. If you've got any
 questions, feel free to ask us, and we'll do our best to answer.
 
-## Terms of Service
+### Terms of Service
 Tamarou, LLC ("we", "us", "our", "Tamarou") present the following terms and
 conditions, which govern your use of the nerdfight.online site (Website,
 "Nerdfight", "Nerdfight Online"), and all content, services and products
@@ -30,7 +32,7 @@ material available by means of the Website (any such material, also known as
 result from it. That is the case regardless of whether the Content in question
 constitutes text, graphics, an audio file, a video file, or computer software.
 
-## I. Your Account
+### I. Your Account
 If you create an account on the Website, you are responsible for maintaining
 the security of your account. You are responsible for all activities that occur
 under the account and any other actions taken in connection with the account.
@@ -39,7 +41,7 @@ not be liable for any acts or omissions resulting from a breach of security,
 including any damages of any kind incurred as a result of such acts or
 omissions.
 
-## II. Account Structure
+### II. Account Structure
 Nerdfight Online currently has a tiered account structure.
 
 Paid Accounts are available for term-based fee and receive access to all
@@ -49,18 +51,18 @@ By using this Service, you agree to this account structure, and to Tamarou's
 right to change, modify, or discontinue any type of account or the features
 available to it at any time.
 
-## III. Privacy Policy
+### III. Privacy Policy
 Your use of the Website is governed by the Privacy Policy, currently located at
 [TBA].
 
-## IV. Indemnity
+### IV. Indemnity
 You agree to indemnify and hold harmless Tamarou LLC, its contractors, its
 licensors, and their respective directors, officers, employees and agents from
 and against any and all claims and expenses, including attorneys' fees, arising
 out of your use of the Website, including but not limited to out of your
 violation of this Agreement.
 
-## V. Termination
+### V. Termination
 We may terminate your access to all or any part of the Website at any time, at
 our sole discretion, if we believe that you have violated this Agreement. You
 agree that any termination of your access to the Website may involve removing
@@ -80,7 +82,7 @@ All provisions of this Agreement which by their nature should survive
 termination shall survive termination, including, without limitation, ownership
 provisions, warranty disclaimers, indemnity and limitations of liability.
 
-## VI. License to Reproduce Content
+### VI. License to Reproduce Content
 By submitting Content to us for inclusion on the Website, you grant us a
 world-wide, royalty-free, and non-exclusive license to reproduce, modify, adapt
 and publish the Content, solely for the purpose of displaying, distributing and
@@ -91,7 +93,7 @@ If you delete Content, we will use reasonable efforts to remove it from the
 Website, but you acknowledge that caching or references to the Content may not
 be made immediately unavailable.
 
-## VII. Account Content
+### VII. Account Content
 You agree to the following provisions for posting Content to the Website:
 
 1. We claim no ownership or control over any Content that you post to the
@@ -119,7 +121,7 @@ Agreement, you agree that we may call upon you to change, modify, or remove
 that Content, within a reasonable amount of time, as defined by us. If you do
 not follow this directive, we may terminate your account.
 
-## VIII. Content Posted on Other Websites
+### VIII. Content Posted on Other Websites
 We have not reviewed, and cannot review, all of the material, including
 computer software, made available through the websites and webpages to which
 we, any user, or any provider of Content links, or that link to us. We do not
@@ -132,16 +134,16 @@ destructive content. We disclaim any responsibility for any harm resulting from
 your use of external websites and webpages, whether that link is provided by us
 or by any provider of Content on the Website.
 
-## IX. No Resale of Services
+### IX. No Resale of Services
 You agree not to reproduce, duplicate, copy, sell, resell, or exploit any
 portion of the Website, use of the Website, or access to the Website.
 
-## X. Exposure to Content
+### X. Exposure to Content
 You agree that by using the service, you may be exposed to Content you find
 offensive or objectionable. If such Content is reported to us, it will be our
 sole discretion as to what action, if any, should be taken.
 
-## XI. Member Conduct
+### XI. Member Conduct
 You agree that you will not use the Website to:
 
 1. Upload, post, or otherwise transmit any Content that is harmful,
@@ -188,7 +190,7 @@ malware, Trojan horses or other harmful or destructive content;
 you have signed up for; for example, accessing and using features you don't
 have a right to use.
 
-## XII. Copyright Infringement
+### XII. Copyright Infringement
 If you believe that material located on the Website violates your copyright,
 you may notify us in accordance with our Digital Millennium Copyright Act
 ('DMCA') Policy. We will respond to all such notices as required by law,
@@ -198,7 +200,7 @@ terminate or deny access to the Website to users of the site who have
 repeatedly infringed upon the copyrights or intellectual property rights of
 others.
 
-## XIII. Volunteers
+### XIII. Volunteers
 We appreciate the service of volunteers in many aspects of Website management,
 including but not limited to providing technical support, creating web-based
 content, performing site administration duties, providing expert advice,
@@ -226,7 +228,7 @@ volunteer work.
 No user is required to volunteer for the Website, and users without volunteer
 status will receive equal care, support, and attention.
 
-## XIV. Changes
+### XIV. Changes
 We reserve the right, at our sole discretion, to modify or replace any part of
 this Agreement at any time. We will take reasonable steps to notify you of any
 substantial changes to this Agreement; however, it is your responsibility to
@@ -238,7 +240,7 @@ We may also, in the future, offer new services and/or features through the
 Website (including the release of new tools and resources). Such new features
 and/or services shall be subject to the terms and conditions of this Agreement.
 
-## XV. Disclaimer of Warranties
+### XV. Disclaimer of Warranties
 This Website is provided "as is". Tamarou, LLC and its suppliers and
 licensors hereby disclaim all warranties of any kind, express or implied,
 including, without limitation, the warranties of merchantability, fitness for a
@@ -252,7 +254,7 @@ content or services through, the Website at your own discretion and risk.
 No advice or information, whether oral or written, obtained by you in any
 fashion shall create any warranty not expressly stated in this Agreement.
 
-## XVI. Limitation of Liability
+### XVI. Limitation of Liability
 You expressly understand and agree that in no event will Tamarou,
 LLC, or its suppliers or licensors, be liable with respect to any subject
 matter of this agreement under any contract, negligence, strict liability or
@@ -266,7 +268,7 @@ control.
 
 The foregoing shall not apply to the extent prohibited by applicable law.
 
-## XVII. General Information
+### XVII. General Information
 This Agreement constitutes the entire agreement between us and you concerning
 your use of the Website. This Agreement may only be modified by a written
 amendment signed by an authorized representative of Tamarou, LLC, or
@@ -288,12 +290,13 @@ will not waive such term or condition or any subsequent breach thereof.
 The section titles in this Agreement are for convenience only and have no legal
 or contractual effect.
 
-## XVIII. Reporting Violations
+### XVIII. Reporting Violations
 For instructions on how to report a violation of this Agreement, please see [How
 do I report a violation of Nerdfight Online's Terms of Service?]
 
-## XIX. Creative Commons
+### XIX. Creative Commons
 This Terms of Service document is based on one developed by Automattic
 (http://wordpress.com/tos/) and Dreamwidth Studios, LLC
 (https://www.dreamwidth.org/legal/tos), and is licensed under a Creative
 Commons Attribution-ShareAlike 2.5 License.
+
