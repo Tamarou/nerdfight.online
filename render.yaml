@@ -21,6 +21,7 @@ services:
   env: docker
   plan: starter
   region: ohio
+  dockerfilePath: ./Dockerfile.gotosocial
   autoDeploy: false
   envVars:
     - key: GTS_HOST
@@ -59,4 +60,23 @@ services:
       sync: false
     - key: GTS_OIDC_LINK_EXISTING
       value: true
-
+- type: web
+  name: ack.nerdfight.online
+  env: docker
+  plan: starter
+  region: ohio
+  dockerfilePath: ./Dockerfile.akkoma
+  autoDeploy: false
+  envVars:
+	- key: DB_HOST
+      fromDatabase:
+        name: gotosocial
+        property: host
+    - key: DB_USER
+      fromDatabase:
+        name: gotosocial
+        property: user
+    - key: DB_PASSWORD
+      fromDatabase:
+        name: gotosocial
+        property: password
