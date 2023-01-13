@@ -68,7 +68,7 @@ services:
   dockerfilePath: ./Dockerfile.akkoma
   autoDeploy: false
   envVars:
-	- key: DB_HOST
+    - key: DB_HOST
       fromDatabase:
         name: gotosocial
         property: host
