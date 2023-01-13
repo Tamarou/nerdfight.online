@@ -41,7 +41,7 @@ USER akkoma
 
 COPY --from=builder --chown=akkoma /akkoma/config/docker.exs /etc/akkoma/config.exs
 COPY --from=builder --chown=akkoma /akkoma/release ${HOME}
-COPY --from=builder --chown=akkoma ./docker-entrypoint.sh ${HOME}/docker-entrypoint.sh
+COPY --from=builder --chown=akkoma docker-entrypoint.sh ${HOME}
 
 EXPOSE 4000
 
