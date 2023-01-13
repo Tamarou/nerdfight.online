@@ -1,5 +1,5 @@
 databases:
-- name: gotosocial
+- name: nerdfight-db
   region: ohio
   plan: starter # $7/mo
 
@@ -28,15 +28,15 @@ services:
       value: nerdfight.online
     - key: GTS_DB_ADDRESS
       fromDatabase:
-        name: gotosocial
+        name: nerdfight-db
         property: host
     - key: GTS_DB_USER
       fromDatabase:
-        name: gotosocial
+        name: nerdfight-db
         property: user
     - key: GTS_DB_PASSWORD
       fromDatabase:
-        name: gotosocial
+        name: nerdfight-db
         property: password
     - key: GTS_STORAGE_BACKEND
       value: s3
@@ -70,13 +70,13 @@ services:
   envVars:
     - key: DB_HOST
       fromDatabase:
-        name: gotosocial
+        name: nerdfight-db
         property: host
     - key: DB_USER
       fromDatabase:
-        name: gotosocial
+        name: nerdfight-db
         property: user
     - key: DB_PASSWORD
       fromDatabase:
-        name: gotosocial
+        name: nerdfight-db
         property: password
