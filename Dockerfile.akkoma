@@ -34,6 +34,7 @@ RUN apk update &&\
     mkdir -p ${DATA}/uploads &&\
     mkdir -p ${DATA}/static &&\
     chown -R akkoma:akkoma ${DATA} &&\
+    chown -R akkoma:akkoma ${HOME} &&\
     mkdir -p /etc/akkoma &&\
     chown -R akkoma:akkoma /etc/akkoma
 

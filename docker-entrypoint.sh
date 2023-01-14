@@ -1,16 +1,15 @@
 #!/bin/ash
 set -e
 
+export HOME=/opt/akkoma
+
 echo "-- Waiting for database..."
-while ! pg_isready -U ${DB_USER:-pleroma} -d postgres://${DB_HOST:-db}:5432/${DB_NAME:-pleroma} -t 1; do
+while ! pg_isready -U "${DB_USER:-akkoma}" -d "postgres://${DB_HOST:-db}:${DB_PORT:-5432}/${DB_NAME:-akkoma}" -t 1; do
     sleep 1s
 done
 
 echo "-- Running migrations..."
-mix ecto.migrate
-
-echo "-- Enabling db config..."
-mix pleroma.config migrate_to_db
+"$HOME"/bin/pleroma_ctl migrate
 
 echo "-- Starting!"
-mix phx.server
+exec "$HOME"/bin/pleroma start
