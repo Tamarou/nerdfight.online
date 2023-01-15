@@ -1,7 +1,7 @@
 import Mix.Config
 
 config :pleroma, Pleroma.Web.Endpoint,
-  url: [host: "akkoma.nerdfight.online"]
+  url: [host: "ack.nerdfight.online"]
 
 config :pleroma, Pleroma.Web.WebFinger, domain: "nerdfight.online"
 

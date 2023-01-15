@@ -34,6 +34,7 @@ RUN apk update &&\
     mkdir -p ${DATA}/uploads &&\
     mkdir -p ${DATA}/static &&\
     chown -R akkoma:akkoma ${DATA} &&\
+    mkdir -p ${HOME}/config &&\
     chown -R akkoma:akkoma ${HOME} &&\
     mkdir -p /etc/akkoma &&\
     chown -R akkoma:akkoma /etc/akkoma
@@ -41,6 +42,7 @@ RUN apk update &&\
 USER akkoma
 
 COPY --from=builder --chown=akkoma /akkoma/config/docker.exs /etc/akkoma/config.exs
+COPY --from=builder --chown=akkoma /akkoma/config/prod.secret.exs ${HOME}/config/prod.secret.exs
 COPY --from=builder --chown=akkoma /akkoma/release ${HOME}
 COPY --chown=akkoma docker-entrypoint.sh ${HOME}
 
