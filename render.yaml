@@ -1,7 +1,7 @@
 databases:
 - name: nerdfight-db
   region: ohio
-  plan: starter # $7/mo
+  plan: standard
 
 services:
 - type: web
@@ -17,53 +17,9 @@ services:
       source: /* # rewrite everything we don't provide to the GTS instance
       destination: https://gts.nerdfight.online:80/
 - type: web
-  name: gts.nerdfight.online
-  env: docker
-  plan: starter
-  region: ohio
-  dockerfilePath: ./Dockerfile.gotosocial
-  autoDeploy: false
-  envVars:
-    - key: GTS_HOST
-      value: nerdfight.online
-    - key: GTS_DB_ADDRESS
-      fromDatabase:
-        name: nerdfight-db
-        property: host
-    - key: GTS_DB_USER
-      fromDatabase:
-        name: nerdfight-db
-        property: user
-    - key: GTS_DB_PASSWORD
-      fromDatabase:
-        name: nerdfight-db
-        property: password
-    - key: GTS_STORAGE_BACKEND
-      value: s3
-    - key: GTS_STORAGE_S3_ENDPOINT
-      value: us-east-1.linodeobjects.com
-    - key: GTS_STORAGE_S3_BUCKET
-      value: nerdfight.online
-    - key: GTS_STORAGE_S3_ACCESS_KEY
-      sync: false
-    - key: GTS_STORAGE_S3_SECRET_KEY
-      sync: false
-    - key: GTS_OIDC_ENABLED
-      value: false
-    - key: GTS_OIDC-IDP-NAME
-      value: Auth0
-    - key: GTS_OIDC_ISSUER
-      value: https://dev-u30o0ebhxa1w43o8.us.auth0.com/login
-    - key: GTS_OIDC_CLIENT_ID
-      sync: false
-    - key: GTS_OIDC_CLIENT_SECRET
-      sync: false
-    - key: GTS_OIDC_LINK_EXISTING
-      value: true
-- type: web
   name: ack.nerdfight.online
   env: docker
-  plan: starter
+  plan: standard
   region: ohio
   dockerfilePath: ./Dockerfile.akkoma
   autoDeploy: false
