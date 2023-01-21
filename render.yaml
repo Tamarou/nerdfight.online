@@ -14,14 +14,16 @@ services:
     - nerdfight.online
   routes:
     - type: rewrite
-      source: /* # rewrite everything we don't provide to the GTS instance
-      destination: https://gts.nerdfight.online:80/
+      source: /.well-known/*
+      destination: https://ack.nerdfight.online/.well-known/*
 - type: web
   name: ack.nerdfight.online
   env: docker
   plan: standard
   region: ohio
   dockerfilePath: ./Dockerfile.akkoma
+  domains:
+    - ack.nerdfight.online
   autoDeploy: false
   envVars:
     - key: DB_HOST
@@ -36,3 +38,10 @@ services:
       fromDatabase:
         name: nerdfight-db
         property: password
+    - key: DOMAIN
+      value: ack.nerdfight.online
+    - key: STATIC_DOMAIN
+      value: nerdfight.online
+    - key: JWT_SIGNER
+      sync: false
+
