@@ -5,7 +5,7 @@ ENV MIX_ENV=prod
 ARG BRANCH=stable
 
 RUN apk update \
-    && apk add git gcc g++ musl-dev make cmake file-dev
+    && apk add git gcc g++ musl-dev make cmake file-dev pandoc
 
 RUN git clone -b "${BRANCH}" --depth=1 https://akkoma.dev/AkkomaGang/akkoma.git
 
@@ -18,6 +18,9 @@ RUN mix local.hex --force &&\
     mix deps.get --only ${MIX_ENV} &&\
     mkdir release &&\
     mix release --path release
+
+COPY ./tos.md tos.md
+RUN pandoc -o tos.html tos.md
 
 FROM alpine:3.17.0 as final
 
@@ -45,7 +48,8 @@ COPY --from=builder --chown=akkoma /akkoma/config/docker.exs /etc/akkoma/config.
 COPY --from=builder --chown=akkoma /akkoma/config/prod.secret.exs /var/lib/akkoma/config.exs
 COPY --from=builder --chown=akkoma /akkoma/release ${HOME}
 COPY --chown=akkoma docker-entrypoint.sh ${HOME}
-COPY --chown=akkoma ./site/static/images/web-logo-black.png ${DATA}/frontends/favicon.png
+COPY --chown=akkoma favicon.png ${DATA}/static/favicon.png
+COPY --from=builder --chown=akkoma /akkoma/tos.html ${DATA}/static/tos.html
 
 RUN curl -L https://akkoma-updates.s3-website.fr-par.scw.cloud/frontend/stable/admin-fe.zip --output ${DATA}/admin-fe.zip &&\
     mkdir -p ${DATA}/static/frontends/admin-fe &&\

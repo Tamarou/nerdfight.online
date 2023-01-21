@@ -21,7 +21,8 @@ services:
   env: docker
   plan: standard
   region: ohio
-  dockerfilePath: ./Dockerfile.akkoma
+  rootDir: akkoma
+  dockerfilePath: ./Dockerfile
   domains:
     - ack.nerdfight.online
   autoDeploy: false
