@@ -35,7 +35,7 @@ RUN addgroup -g ${GID} akkoma &&\
 RUN apk update &&\
     apk add exiftool ffmpeg imagemagick libmagic ncurses postgresql-client su-exec shadow curl &&\
     mkdir -p ${DATA}/uploads &&\
-    mkdir -p ${DATA}/static &&\
+    mkdir -p ${DATA}/static/static &&\
     chown -R akkoma:akkoma ${DATA} &&\
     mkdir -p ${HOME}/config &&\
     chown -R akkoma:akkoma ${HOME} &&\
@@ -49,7 +49,7 @@ COPY --from=builder --chown=akkoma /akkoma/config/prod.secret.exs /var/lib/akkom
 COPY --from=builder --chown=akkoma /akkoma/release ${HOME}
 COPY --chown=akkoma docker-entrypoint.sh ${HOME}
 COPY --chown=akkoma favicon.png ${DATA}/static/favicon.png
-COPY --from=builder --chown=akkoma /akkoma/tos.html ${DATA}/static/tos.html
+COPY --from=builder --chown=akkoma /akkoma/tos.html ${DATA}/static/static/terms-of-service.html
 
 RUN curl -L https://akkoma-updates.s3-website.fr-par.scw.cloud/frontend/stable/admin-fe.zip --output ${DATA}/admin-fe.zip &&\
     mkdir -p ${DATA}/static/frontends/admin-fe &&\

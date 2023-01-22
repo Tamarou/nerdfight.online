@@ -1,3 +1,5 @@
+## Terms of Service
+
 Our full Terms of Service can be found [here](https://nerdfight.online/about/tos/).
 
 Nerdfight Online is a production of Tamarou LLC and is maintained by them and a
