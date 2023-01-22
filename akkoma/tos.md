@@ -20,7 +20,7 @@ The full Standards of Conduct is available [here](https://nerdfight.online/about
 
 If you are looking to reach the mods for any reason, e.g. service latency or
 outages, emoji requests, requests to add domains to our blocklist, etc. we are
-reachable on our GitHub Community Repo Issue Tracker.
+reachable on our [GitHub Issue Tracker](https://github.com/Tamarou/nerdfight.online/issues/new).
 
 A few things to note:
 
@@ -37,5 +37,6 @@ subscription service. When that happens depends strongly on a cacophony of
 different things, the number of users, how much development time is required,
 and even how much revenue Tamarou LLC gets through other sources.
 
-Currently we have no way of taking your money, which is probably why we're
-still invite only.
+If you'd like to donate some money before all of that is setup (it's neither
+neccessary nor expected, but it is appreciated) you may do so via the sponsors
+link on our [Github Page](https://github.com/tamarou/nerdfight.online).
