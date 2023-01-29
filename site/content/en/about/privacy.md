@@ -74,10 +74,10 @@ events and have notifications of those events sent to you via email. You will
 be able to change your mind and opt out of receiving notifications via email at
 any time.
 
-When you register, you must also give us your date of birth. This is to make
-sure we aren't accidentally collecting information from children, which is
-prohibited by United States law. We save this information so that we can prove
-we're complying with that law. Once you've created your account, you can
+When you register, you may also be asked to give us your date of birth. This is
+to make sure we aren't accidentally collecting information from children, which
+is prohibited by United States law. We save this information so that we can
+prove we're complying with that law. Once you've created your account, you can
 specify a birthdate to make public, which does not have to be your actual date
 of birth.
 
@@ -110,69 +110,26 @@ post publicly.
 
 From time to time, we may allow you to provide us with your login credentials
 for a site that is not owned and operated by us in order to allow you to
-integrate data from that external service to your Dreamwidth account. Examples
-of this include the journal import feature and the entry crosspost feature.
-Providing us this information is completely optional. Your login credentials
-are only used for the purposes of these features, and are not used for any
-other purpose.
+integrate data from that external service to your account. Providing us this
+information is completely optional. Your login credentials are only used for
+the purposes of these features, and are not used for any other purpose.
 
 ## Account contents
 
-You may optionally post content to your account with varying security levels.
-To the best of our ability, and limited only by the possibility of bugs or
-technical difficulties, we will honor the security levels you choose for your
-content and display that content only to those whom you have authorized to see
-it.
+You may post content to your account with varying security levels. To the best
+of our ability, and limited only by the possibility of bugs or technical
+difficulties, we will honor the security levels you choose for your content and
+display that content only to those whom you have authorized to see it.
 
-While maintaining the site, Dreamwidth staff may need to view the contents of
+While maintaining the site, staff may need to view the contents of
 your account, including information for which you have chosen a restrictive
 security level. Circumstances in which this is necessary include, but are not
 limited to: troubleshooting and diagnosing technical problems, investigating
-possible Terms of Service violations, and legal compliance issues.
+possible [Terms of Service](/about/tos/) violations, and legal compliance issues.
 
-Dreamwidth staff only use the ability to override your chosen security levels
+Staff only use the ability to override your chosen security levels
 during the course of these investigations. At no time is your secured content
-disclosed to any third party, except when required by law. Any use of this
-ability is logged and regularly audited.
-
-## Financial information and transactions
-
-You can engage in financial transactions with Dreamwidth to purchase
-enhancements for your account. These transactions are optional. If you choose
-to purchase enhanced services, you will be asked to provide financial
-information to complete the transaction. There are several payment methods
-available, each of which requires disclosure of certain personal and financial
-information. The specifics of these methods of payment are as follows:
-
-Credit cards: If you pay by credit card, we need you to provide your credit
-card number, your full name as it appears on the card, your address as it
-appears on the card statement, and the CVN or Card Verification Number. This
-information is required so we can authorize and charge your credit card. Your
-financial information is protected by industry-standard encryption methods. It
-is never stored on our servers: we pass it immediately along to our processor
-for the sole purpose of completing the authorized transaction.
-
-Checks: If you pay by check, we need you to provide us with a check printed
-with your bank's routing code and your account number, your name, and your
-address. This information is required so our bank can transfer funds from your
-account to ours. We use this information only for the purpose of the single
-transaction represented by the check, however, our bank retains, on their
-servers, permanent electronic scans of all checks deposited into our account.
-
-Money orders: If you pay by money order, we need you to provide us with a money
-order or international money order (as appropriate depending on the country in
-which you're currently living). We do not require the disclosure of any
-personal information to use a money order as payment beyond a signature on the
-face of the money order. However, the location that issues your money order may
-require you to write additional personal information on the money order. Our
-bank retains, on their servers, permanent electronic scans of all money orders
-deposited into our account.
-
-In all cases, Dreamwidth collects this personal and financial information only
-as necessary or appropriate for the completion of the single requested
-transaction. Any additional personally-identifying but non-financial
-information you disclose during these transactions will be governed by the
-"Disclosure of personally-identifying information" provisions below.
+disclosed to any third party, except when required by law.
 
 ## Disclosure of personally-identifying information
 
@@ -190,17 +147,15 @@ information when that release is required by law or by court order, or when we
 believe in good faith that disclosure is reasonably necessary to protect the
 safety or rights of us, third parties, or the public at large.
 
- ## Special rules regarding children
+## Special rules regarding children
 
 The Children's Online Privacy Protection Act ('COPPA') requires that we inform
 parents on how we collect and disclose the personal information of children
 under the age of 13.
 
-We do not permit children under the age of 13 to use our service. To prevent
-this, we collect date of birth at the time of account creation. If your child
-under the age of 13 has mis-represented their age at account creation, please
-contact us at coppa@dreamwidth.org. After confirming your identity, we will
-remove the account.
+We do not permit children under the age of 13 to use our service. If your child
+under the age of 13 has mis-represented their age to us, please contact us at
+coppa@tamarou.com. After confirming your identity, we will remove the account.
 
 ## Cookies
 
@@ -229,7 +184,7 @@ If we learn of a system security breach, we will notify you electronically so
 you can take appropriate steps to protect yourself. Depending on where you
 live, you may have a legal right to receive notice of a security breach in
 writing. To receive free written notice, you should contact us at
-privacy@dreamwidth.org.
+privacy@tamarou.com.
 
 ## Deleting your information
 
@@ -245,11 +200,10 @@ this time, all your personally-identifying information will be removed entirely
 from our service, with the exception of any records we must retain to document
 compliance with regulatory requirements.
 
-As part of the day to day operation of Dreamwidth Studios, we will make regular
-copies of the data contained in the databases for backup purposes. These
-backups can potentially contain deleted data for several weeks or months. These
-backups will also be governed by the rules for disclosure of
-personally-identifying information.
+As part of the day to day operations, we will make regular copies of the data
+contained in the databases for backup purposes. These backups can potentially
+contain deleted data for several weeks or months. These backups will also be
+governed by the rules for disclosure of personally-identifying information.
 
 ## Outside Vendors
 
@@ -276,37 +230,30 @@ hosting that application or service.
 ## Business Vendors
 
 From time to time, we may contract with outside vendors to provide business
-services that will assist us in administering and maintaining the Dreamwidth
-service. We will list all of our business vendors in this privacy policy, as
-well as providing links to their privacy policies and information on how to opt
-out of your information being included in those services.
+services that will assist us in administering and maintaining the service. We
+will list all of our business vendors in this privacy policy, as well as
+providing links to their privacy policies and information on how to opt out of
+your information being included in those services.
 
 ### Our current business vendors are:
 
-Google Business Services: We use Google Business Services for their Google
-Analytics service. For information on how Google Business Services may use your
-information, see Google's Privacy Center. Google Analytics collects aggregate
-data on site usage, such as browser type and the navigational paths our users
-use, which helps us make decisions about how to improve the site. Some users
-may also have added Google Analytics code to their journals. To opt out of your
-site use being included in our Google Analytics report, you can use a browser
-plugin to block the JavaScript being served by google-analytics.com.
+We currently have no business vendors beyond our hosting provider, render.com.
 
 ## Changes
 
 We may change our privacy policy from time to time. If these changes are minor,
 we will post them to this page. If the changes are major, we will post them to
-this page and notify users through our Dreamwidth News journal and through
-messages sent to your account's Dreamwidth Inbox. Your continued use of this
-site after any change in this Privacy Policy will constitute your acceptance of
-such change. Contacting us
+this page and notify users through server annoucements. Your continued use of
+this site after any change in this Privacy Policy will constitute your
+acceptance of such change. Contacting us
 
-If you have questions about this policy, you can contact us at privacy@dreamwidth.org.
+If you have questions about this policy, you can contact us at
+privacy@tamarou.com.
 
 ## Creative Commons
 
-This privacy policy is based on one developed by Automattic
-(http://automattic.com/privacy/) and is licensed under a Creative Commons
-Attribution-ShareAlike 2.5 License.
+This privacy policy is based on one developed by [Dreamwidth
+Studio](https://www.dreamwidth.org/legal/privacy) and is licensed under a
+Creative Commons Attribution-ShareAlike 2.5 License.
 
 
