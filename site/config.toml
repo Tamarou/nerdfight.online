@@ -5,7 +5,7 @@ theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
 
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
-Paginate = 6 # this is set low for demonstrating with dummy content. Set to a higher number
+Paginate = 10
 googleAnalytics = ""
 enableRobotsTXT = true
 
@@ -34,4 +34,4 @@ enableRobotsTXT = true
 
 [[params.ananke_socials]]
 name = "mastodon"
-url = "https://client.nerdfight.online"
+url = "https://ack.nerdfight.online"
