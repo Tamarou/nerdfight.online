@@ -9,9 +9,7 @@ cascade:
 ---
 It started on twitter. As Patrick [explained there](https://twitter.com/fitzgepn/status/1297712297595400192?ref_src=twsrc%5Etfw):
 
-> [@JacobyDave](https://twitter.com/JacobyDave?ref_src=twsrc%5Etfw) has written about his [#ff](https://twitter.com/hashtag/ff?src=hash&amp;ref_src=twsrc%5Etfw) script and the
-> curious phenomena of [#fakeNerdFightFriday](https://twitter.com/hashtag/fakeNerdFightFriday?src=hash&amp;ref_src=twsrc%5Etfw)
-> that sprang up from it here: [https://t.co/SSo1dU9n8b](https://t.co/SSo1dU9n8b)
+> [@JacobyDave](https://twitter.com/JacobyDave?ref_src=twsrc%5Etfw) has written about his [#ff](https://twitter.com/hashtag/ff?src=hash&amp;ref_src=twsrc%5Etfw) script and the curious phenomena of [#fakeNerdFightFriday](https://twitter.com/hashtag/fakeNerdFightFriday?src=hash&amp;ref_src=twsrc%5Etfw) that sprang up from it [here](https://jacoby.github.io/2019/07/05/the-social-experiment-of-followfriday.html).
 
 Nerdfight Online is a ActivityPub server that embraces
 [Kayfabe](https://en.wikipedia.org/wiki/Kayfabe) and Animated Gifs, with a
