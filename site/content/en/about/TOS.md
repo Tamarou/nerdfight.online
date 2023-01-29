@@ -42,18 +42,17 @@ including any damages of any kind incurred as a result of such acts or
 omissions.
 
 ### II. Account Structure
-Nerdfight Online currently has a tiered account structure.
+Nerdfight Online does not yet have a tiered account structure.
 
-Paid Accounts are available for term-based fee and receive access to all
-extended site features.
+Accounts are available for term-based fee and receive access to all extended
+site features.
 
 By using this Service, you agree to this account structure, and to Tamarou's
 right to change, modify, or discontinue any type of account or the features
 available to it at any time.
 
 ### III. Privacy Policy
-Your use of the Website is governed by the Privacy Policy, currently located at
-[TBA].
+Your use of the Website is governed by the [Privacy Policy](/about/privacy/).
 
 ### IV. Indemnity
 You agree to indemnify and hold harmless Tamarou LLC, its contractors, its
@@ -144,7 +143,8 @@ offensive or objectionable. If such Content is reported to us, it will be our
 sole discretion as to what action, if any, should be taken.
 
 ### XI. Member Conduct
-You agree that you will not use the Website to:
+In addition to our [Standards of Conduct](/about/soc/): you agree that you will
+not use the Website to:
 
 1. Upload, post, or otherwise transmit any Content that is harmful,
 threatening, abusive, hateful, invasive to the privacy and publicity rights of
