@@ -10,7 +10,7 @@ GetOptions(
     "dry-run|n" => \my $dry_run,
 );
 
-my $dbh = DBI->connect("dbi:Pg:host=$ENV{DB_HOST};dbname=$ENV{DB_NAME}", $ENV{DB_USER}, $ENV{DB_PASS}, {AutoCommit => 0});
+my $dbh = DBI->connect("dbi:Pg:host=$ENV{PGHOST};dbname=$ENV{PGDATABASE}", $ENV{PGUSER}, $ENV{PGPASSWORD}, {AutoCommit => 0});
 
 my $sql = q{
     SELECT users.nickname as nickname,

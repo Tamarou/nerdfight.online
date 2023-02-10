@@ -10,6 +10,7 @@ RUN apt-get update && \
         libssl-dev \
         libzip-dev \
         libpq-dev \
+        postgresql-client \
     && apt-get clean
 
 RUN cpanm Carton
