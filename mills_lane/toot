@@ -1,6 +1,0 @@
-#!/bin/sh
-
-mkdir -p $HOME/.config/toot/config.json
-echo $TOOT_CONF > $HOME/.config/toot/config.json
-
-/usr/bin/toot post "$(./fnff.pl)"
