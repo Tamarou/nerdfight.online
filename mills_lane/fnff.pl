@@ -62,4 +62,4 @@ my $client = Mastodon::Client->new(
 
 say STDERR $post;
 
-#$client->post_status($post) unless $dry_run;
+$client->post_status($post) unless $dry_run;
