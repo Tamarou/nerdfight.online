@@ -1,6 +1,5 @@
 #!/usr/bin/env perl
 use 5.34.0;
-use local::lib q(local);
 
 use DBI;
 use DBD::Pg qw(:pg_types);
