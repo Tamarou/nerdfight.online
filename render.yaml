@@ -43,8 +43,6 @@ services:
       value: ack.nerdfight.online
     - key: STATIC_DOMAIN
       value: nerdfight.online
-    - key: JWT_SIGNER
-      sync: false
  - type: cron
    name: mills_lane.nerdfight.online
    env: docker
