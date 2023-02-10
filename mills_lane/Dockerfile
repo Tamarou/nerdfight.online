@@ -1,7 +1,5 @@
 FROM perl:latest
 
-RUN cpanm Carton
-
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
