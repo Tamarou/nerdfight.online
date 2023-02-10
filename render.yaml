@@ -65,6 +65,5 @@ services:
       fromDatabase:
         name: nerdfight-db
         property: password
-    - key: TOOT_CONFIG
-      sync: false
+    - fromGroup: nerdfight-mills-lane
 

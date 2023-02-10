@@ -2,10 +2,6 @@ FROM perl:latest
 
 RUN cpanm Carton
 
-RUN apt update && apt upgrade -yyq
-RUN apt install -yyq \
-        toot
-
 ARG APP_DIR=/usr/local/fnff
 RUN mkdir -p $APP_DIR
 
@@ -19,4 +15,5 @@ RUN apt install python
 
 COPY ./ $APP_DIR
 
-CMD ["./toot"]
+ENTRYPOINT ["carton", "exec"]
+CMD ["./fnff.pl"]
