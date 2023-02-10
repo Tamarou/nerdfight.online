@@ -7,11 +7,12 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         build-essential \
         ca-certificates \
-        carton \
         libssl-dev \
         libzip-dev \
         libpq-dev \
     && apt-get clean
+
+RUN cpanm Carton
 
 ARG APP_DIR=/usr/local/mills_lane
 RUN mkdir -p $APP_DIR
