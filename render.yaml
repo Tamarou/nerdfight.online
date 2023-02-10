@@ -49,6 +49,7 @@ services:
   name: mills_lane.nerdfight.online
   env: docker
   plan: starter
+  region: ohio
   rootDir: mills_lane
   dockerfilePath: ./Dockerfile
   schedule: "0 13 * * 5" # friday at 8am EST
