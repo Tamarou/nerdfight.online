@@ -48,6 +48,7 @@ COPY --from=builder --chown=akkoma /akkoma/config/docker.exs /etc/akkoma/config.
 COPY --from=builder --chown=akkoma /akkoma/config/prod.secret.exs /var/lib/akkoma/config.exs
 COPY --from=builder --chown=akkoma /akkoma/release ${HOME}
 COPY --chown=akkoma docker-entrypoint.sh ${HOME}
+COPY --chown=akkoma bin/* ${HOME}/bin/
 COPY --chown=akkoma favicon.png ${DATA}/static/favicon.png
 COPY --from=builder --chown=akkoma /akkoma/tos.html ${DATA}/static/static/terms-of-service.html
 
