@@ -30,7 +30,7 @@ ARG HOME=/opt/akkoma
 ARG DATA=/var/lib/akkoma
 
 RUN addgroup -g ${GID} akkoma &&\
-    adduser --system --shell /bin/false --home ${HOME} -D -G akkoma -u ${UID} akkoma
+    adduser --system --shell /bin/ash --home ${HOME} -D -G akkoma -u ${UID} akkoma
 
 RUN apk update &&\
     apk add exiftool ffmpeg imagemagick libmagic ncurses postgresql-client su-exec shadow curl &&\
