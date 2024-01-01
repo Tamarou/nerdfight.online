@@ -70,31 +70,27 @@ services:
      value: pleroma
    - fromGroup: nerdfight-mills-lane
 - type: cron
-  name: maint.nerdfight.online
+  name: mills_lane.nerdfight.online.annual
   env: docker
   plan: starter
   region: ohio
-  rootDir: akkoma
+  rootDir: mills_lane
   dockerfilePath: ./Dockerfile
-  dockerCommand: /opt/akkoma/bin/db-cleanup.sh
-  schedule: "0 3 1-7 * */7" # 3 am on the first sunday the month
+  dockerCommand: "carton exec ./fnff.pl -a"
+  schedule: "59 23 31 12 *" # 12-31 @ 11:59pm UTC
   envVars:
-    - key: DB_HOST
-      fromDatabase:
-        name: nerdfight-db
-        property: host
-    - key: DB_USER
-      fromDatabase:
-        name: nerdfight-db
-        property: user
-    - key: DB_PASSWORD
-      fromDatabase:
-        name: nerdfight-db
-        property: password
-    - key: DOMAIN
-      value: ack.nerdfight.online
-    - key: STATIC_DOMAIN
-      value: nerdfight.online
-    - key: JWT_SIGNER
-      sync: false
-
+   - key: PGHOST
+     fromDatabase:
+       name: nerdfight-db
+       property: host
+   - key: PGUSER
+     fromDatabase:
+       name: nerdfight-db
+       property: user
+   - key: PGPASSWORD
+     fromDatabase:
+       name: nerdfight-db
+       property: password
+   - key: PGDATABASE
+     value: pleroma
+   - fromGroup: nerdfight-mills-lane
