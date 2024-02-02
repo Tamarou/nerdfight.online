@@ -7,9 +7,30 @@ use Getopt::Long;
 use Mastodon::Client;
 
 GetOptions(
+    "auth" => \my $auth,
     "annual|a" => \my $annual,
     "dry-run|n" => \my $dry_run,
 );
+
+if ($auth) {
+    my $client = Mastodon::Client->new(
+        instance => $ENV{INSTANCE},
+        name => $ENV{USERNAME},
+        client_id => $ENV{CLIENT_ID},
+        client_secret => $ENV{CLIENT_SECRET},
+    );
+
+    if ($ENV{ACCESS_CODE}) {
+        say "saw access_code $ENV{ACCESS_CODE}";
+        $client->authorize(access_code => $ENV{ACCESS_CODE});
+        say $client->access_token;
+    } else {
+       say "Authorization URL, please visit this in a browser";
+       say  $client->authorization_url()
+    }
+
+    exit;
+}
 
 my $dbh = DBI->connect("dbi:Pg:host=$ENV{PGHOST};dbname=$ENV{PGDATABASE}", $ENV{PGUSER}, $ENV{PGPASSWORD}, {AutoCommit => 0});
 
