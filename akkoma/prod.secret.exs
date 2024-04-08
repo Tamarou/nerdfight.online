@@ -8,6 +8,8 @@ config :pleroma, Pleroma.Web.WebFinger, domain: System.get_env("STATIC_DOMAIN")
 config :joken, default_signer: System.get_env("JWT_SIGNER")
 
 config :pleroma, Pleroma.Repo,
+  port: 25060,
+  ssl: true,
   prepare: :named,
   parameters: [
     plan_cache_mode: "force_custom_plan"
