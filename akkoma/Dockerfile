@@ -45,6 +45,7 @@ RUN apk update &&\
 USER akkoma
 
 COPY --from=builder --chown=akkoma /akkoma/config/docker.exs /etc/akkoma/config.exs
+RUN chmod o= /etc/akkoma/config.exs
 COPY --from=builder --chown=akkoma /akkoma/config/prod.secret.exs /var/lib/akkoma/config.exs
 COPY --from=builder --chown=akkoma /akkoma/release ${HOME}
 COPY --chown=akkoma docker-entrypoint.sh ${HOME}
