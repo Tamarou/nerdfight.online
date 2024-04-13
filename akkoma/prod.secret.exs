@@ -10,7 +10,8 @@ config :joken, default_signer: System.get_env("JWT_SIGNER")
 config :pleroma, Pleroma.Upload, base_url: System.get_env("MEDIA_URL")
 
 config :pleroma, Pleroma.Repo,
-  port: 25060,
+  database: System.get_env("DB_NAME"),
+  port: System.get_env("DB_PORT"),
   ssl: true,
   prepare: :named,
   parameters: [
