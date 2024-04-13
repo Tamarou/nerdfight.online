@@ -7,6 +7,8 @@ config :pleroma, Pleroma.Web.WebFinger, domain: System.get_env("STATIC_DOMAIN")
 
 config :joken, default_signer: System.get_env("JWT_SIGNER")
 
+config :pleroma, Pleroma.Upload, base_url: System.get_env("MEDIA_URL")
+
 config :pleroma, Pleroma.Repo,
   port: 25060,
   ssl: true,
