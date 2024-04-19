@@ -32,7 +32,7 @@ if ($auth) {
     exit;
 }
 
-my $dbh = DBI->connect("dbi:Pg:host=$ENV{PGHOST};dbname=$ENV{PGDATABASE}", $ENV{PGUSER}, $ENV{PGPASSWORD}, {AutoCommit => 0});
+my $dbh = DBI->connect("dbi:Pg:host=$ENV{DB_HOST};port=$ENV{DB_PORT};dbname=$ENV{DB_NAME}", $ENV{DB_USER}, $ENV{DB_PASSWORD}, {AutoCommit => 0});
 
 my $period = $annual ? 'year' : 'week';
 
