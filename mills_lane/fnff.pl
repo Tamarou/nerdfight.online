@@ -61,19 +61,19 @@ my $list = join "\n", map qq{\@$_}, $winners->@*;
 my $post = qq{
 #FF #FakeNerdFightFriday
 
-As \@fitzgepn\@mas.to explained on [the birdsite][1]:
-
-\@jacobydave\@mastodon.xyz has [written about][2] his #ff script and the
-curious phenomena of #fakeNerdFightFriday that sprang up from it.
-
-[1]: https://twitter.com/fitzgepn/status/1297712297595400192
-[2]: https://jacoby.github.io/2019/07/05/the-social-experiment-of-followfriday.html
-
 Here are this ${period}'s winners:
 
 $list
 
 LET'S GET IT ON!
+
+As documented by \@fitzgepn\@mas.to on the hellsite, 
+\@jacobydave\@mastodon.xyz has [written about][1] his #ff script and the
+curious phenomena of #fakeNerdFightFriday that sprang up from it.
+
+[1]: https://jacoby.github.io/2019/07/05/the-social-experiment-of-followfriday.html
+
+
 };
 
 say STDERR $post;
