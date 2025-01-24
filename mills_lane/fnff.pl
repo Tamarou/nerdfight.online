@@ -7,32 +7,35 @@ use Getopt::Long;
 use Mastodon::Client;
 
 GetOptions(
-    "auth" => \my $auth,
-    "annual|a" => \my $annual,
+    "auth"      => \my $auth,
+    "annual|a"  => \my $annual,
     "dry-run|n" => \my $dry_run,
 );
 
 if ($auth) {
     my $client = Mastodon::Client->new(
-        instance => $ENV{INSTANCE},
-        name => $ENV{USERNAME},
-        client_id => $ENV{CLIENT_ID},
+        instance      => $ENV{INSTANCE},
+        name          => $ENV{USERNAME},
+        client_id     => $ENV{CLIENT_ID},
         client_secret => $ENV{CLIENT_SECRET},
     );
 
-    if ($ENV{ACCESS_CODE}) {
+    if ( $ENV{ACCESS_CODE} ) {
         say "saw access_code $ENV{ACCESS_CODE}";
-        $client->authorize(access_code => $ENV{ACCESS_CODE});
+        $client->authorize( access_code => $ENV{ACCESS_CODE} );
         say $client->access_token;
-    } else {
-       say "Authorization URL, please visit this in a browser";
-       say  $client->authorization_url()
+    }
+    else {
+        say "Authorization URL, please visit this in a browser";
+        say $client->authorization_url();
     }
 
     exit;
 }
 
-my $dbh = DBI->connect("dbi:Pg:host=$ENV{DB_HOST};port=$ENV{DB_PORT};dbname=$ENV{DB_NAME}", $ENV{DB_USER}, $ENV{DB_PASSWORD}, {AutoCommit => 0});
+my $dbh = DBI->connect(
+    "dbi:Pg:host=$ENV{DB_HOST};port=$ENV{DB_PORT};dbname=$ENV{DB_NAME}",
+    $ENV{DB_USER}, $ENV{DB_PASSWORD}, { AutoCommit => 0 } );
 
 my $period = $annual ? 'year' : 'week';
 
@@ -67,7 +70,7 @@ $list
 
 LET'S GET IT ON!
 
-As documented by \@fitzgepn\@mas.to on the hellsite, 
+As documented by \@fitzgepn\@mas.to on the hellsite,
 \@jacobydave\@mastodon.xyz has [written about][1] his #ff script and the
 curious phenomena of #fakeNerdFightFriday that sprang up from it.
 
@@ -81,11 +84,11 @@ say STDERR $post;
 exit if $dry_run;
 
 my $client = Mastodon::Client->new(
-    instance => $ENV{INSTANCE},
-    name => $ENV{USERNAME},
-    client_id => $ENV{CLIENT_ID},
-    client_secret => $ENV{CLIENT_SECRET},
-    access_token => $ENV{ACCESS_TOKEN},,
+    instance       => $ENV{INSTANCE},
+    name           => $ENV{USERNAME},
+    client_id      => $ENV{CLIENT_ID},
+    client_secret  => $ENV{CLIENT_SECRET},
+    access_token   => $ENV{ACCESS_TOKEN},
     coerce_entites => 1,
 );
 
