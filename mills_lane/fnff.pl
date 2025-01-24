@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-use 5.34.0;
+use 5.40.0;
 
 use DBI;
 use DBD::Pg qw(:pg_types);
